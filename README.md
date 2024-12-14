@@ -1,5 +1,11 @@
 # AIProject
 
+Först och främst: Hur kör man applikationen:
+1. Starta servern via kommandot: node model.mjs
+2. Öppna frontEnd.html i en browser
+3. Börja skicka inputs
+
+
 Del 1: Planering
 Problemområde
 Problemområdet fokuserar på att minska matsvinn genom att föreslå recept baserat på tillgängliga ingredienser. Matsvinn är ett stort problem som bidrar till miljöförstöring och växthusgasutsläpp. 
