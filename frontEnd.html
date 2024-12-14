@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+        input, button {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 1em;
+        }
+        #results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recipe Finder</h1>
+    <p>Enter ingredients to find recipes:</p>
+    <input type="text" id="ingredients" placeholder="e.g., milk, egg, flour" />
+    <button onclick="findRecipes()">Find Recipes</button>
+
+    <div id="results"></div>
+
+    <script>
+        //Postar ingredienserna till endpoint predict på localhost 3000
+        const findRecipes = async () => {
+            const ingredients = document.getElementById('ingredients').value.split(',').map(i => i.trim());
+            const response = await fetch('http://localhost:3000/predict', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ingredients }),
+            });
+        //Väntar på svar från localhost 3000 och populerar sedan diven med id results med lite mer flavor på infon från API:t
+            const data = await response.json();
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `
+                <h2>Predicted Recipe: ${data.brainPrediction}</h2>
+                <h3>Additional Suggestions:</h3>
+                <ul>
+                    ${data.apiSuggestions.map(recipe => `<li>${recipe.title}</li>`).join('')}
+                </ul>
+            `;
+        };
+    </script>
+</body>
+</html>

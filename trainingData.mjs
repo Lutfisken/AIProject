@@ -1,0 +1,30 @@
+const trainingData = [
+    
+    { input: { milk: 1, egg: 1, flour: 1 }, output: { pancakes: 1 } },
+    { input: { bread: 1, egg: 1, butter: 1 }, output: { frenchToast: 1 } },
+    { input: { oats: 1, milk: 1, banana: 1 }, output: { porridge: 1 } },
+    { input: { bacon: 1, egg: 1, toast: 1 }, output: { breakfastPlatter: 1 } },
+    { input: { bread: 1, cheese: 1, tomato: 1 }, output: { cheeseSandwich: 1 } },
+    { input: { bread: 1, chicken: 1, mayonnaise: 1 }, output: { chickenSandwich: 1 } },
+    { input: { bread: 1, lettuce: 1, tomato: 1, bacon: 1 }, output: { bltSandwich: 1 } },
+    { input: { lettuce: 1, tomato: 1, cucumber: 1 }, output: { gardenSalad: 1 } },
+    { input: { chicken: 1, lettuce: 1, parmesan: 1, croutons: 1 }, output: { caesarSalad: 1 } },
+    { input: { quinoa: 1, avocado: 1, spinach: 1 }, output: { quinoaSalad: 1 } },
+    { input: { pasta: 1, tomato: 1, garlic: 1 }, output: { tomatoPasta: 1 } },
+    { input: { pasta: 1, cream: 1, cheese: 1 }, output: { alfredoPasta: 1 } },
+    { input: { pasta: 1, groundBeef: 1, tomato: 1 }, output: { bolognese: 1 } },
+    { input: { tomato: 1, garlic: 1, onion: 1 }, output: { tomatoSoup: 1 } },
+    { input: { chicken: 1, carrot: 1, celery: 1 }, output: { chickenSoup: 1 } },
+    { input: { potato: 1, leek: 1, cream: 1 }, output: { potatoLeekSoup: 1 } },
+    { input: { banana: 1, milk: 1 }, output: { bananaSmoothie: 1 } },
+    { input: { strawberry: 1, yogurt: 1, honey: 1 }, output: { strawberrySmoothie: 1 } },
+    { input: { spinach: 1, banana: 1, almondMilk: 1 }, output: { greenSmoothie: 1 } },
+    { input: { sugar: 1, butter: 1, flour: 1 }, output: { cookies: 1 } },
+    { input: { chocolate: 1, milk: 1, sugar: 1 }, output: { chocolateCake: 1 } },
+    { input: { apple: 1, cinnamon: 1, sugar: 1 }, output: { applePie: 1 } },
+    { input: { potato: 1, oil: 1, salt: 1 }, output: { frenchFries: 1 } },
+    { input: { tortilla: 1, cheese: 1, jalapeno: 1 }, output: { quesadilla: 1 } },
+    { input: { chickpeas: 1, tahini: 1, lemon: 1 }, output: { hummus: 1 } },
+];
+
+export default trainingData;
