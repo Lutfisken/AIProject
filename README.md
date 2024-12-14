@@ -91,6 +91,7 @@ Utmaningar?
 Att hitta lämpliga datasets för att träna modellen tog tid som väntat enligt förslaget som inspirerade detta.
 Att garantera att modellen generaliserade väl till osedda data var utmanande.
 Jag försökte få till att hämta mer från API:t och lagra lokalt för att använda som eventuell träningsdata, men fick inte riktigt till det och brast lite på tiden för att komma i mål.
+Har bara 150 calls/dag till Spoonacular-API så det var svårt att verifiera efter lite ändringar att allt lirade fortfarande.
 
 Framtida förbättringar?
 
